@@ -37,6 +37,7 @@ const createAutoComplete = ({
       option.innerHTML = renderOption(item);
       option.addEventListener('click', () => {
         dropdown.classList.remove('is-active');
+        console.log(item);
         input.value = inputValue(item);
         onOptionSelect(item);
       });

@@ -8,7 +8,7 @@ const autoCompleteConfig = {
   },
 
   inputValue: (movie) => {
-    return movie.title;
+    return movie.Title;
   },
   async fetchData(searchTerm) {
     const url = 'http://www.omdbapi.com/';
